@@ -1,0 +1,15 @@
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  script:
+    - rsync -av * /var/www/mahallatanlovbot --no-perms --no-owner --no-group --omit-dir-times
+    - cd /var/www/mahallatanlovbot && source venv/bin/activate && pip install -r requirements/production.txt
+    - sudo systemctl restart mahallatanlovbot
+    - sudo -u redmedia pm2 restart 13
+  environment:
+    name: production
+    url: https://mahalla.redmedia.uz
+  only:
+    - main

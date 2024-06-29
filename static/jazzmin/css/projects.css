@@ -1,0 +1,25 @@
+li.nav-header {
+    display: none;
+}
+
+td.field-first_name {
+    max-width: 10px;
+    overflow: auto;
+    white-space: nowrap;
+}
+td.field-last_name {
+    max-width: 10px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+td.field-first_name {
+    max-width: 10px;
+    overflow: auto;
+    white-space: nowrap;
+}
+td.field-last_name {
+    max-width: 10px;
+    overflow: auto;
+    white-space: nowrap;
+}

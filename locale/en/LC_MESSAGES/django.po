@@ -1,0 +1,426 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-27 17:24+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: apps/core/models.py:10
+msgid "Created at"
+msgstr ""
+
+#: apps/core/models.py:11
+msgid "Updated at"
+msgstr ""
+
+#: apps/location/models.py:7 apps/location/models.py:19
+#: apps/location/models.py:34 apps/users/models.py:85
+msgid "Name"
+msgstr ""
+
+#: apps/location/models.py:8 apps/location/models.py:21
+#: apps/location/models.py:36
+msgid "Is activate"
+msgstr ""
+
+#: apps/location/models.py:11
+msgid "Region"
+msgstr ""
+
+#: apps/location/models.py:12
+msgid "Regions"
+msgstr ""
+
+#: apps/location/models.py:26
+msgid "Area"
+msgstr ""
+
+#: apps/location/models.py:27
+msgid "Areas"
+msgstr ""
+
+#: apps/location/models.py:41
+msgid "Village"
+msgstr ""
+
+#: apps/location/models.py:42
+msgid "Villages"
+msgstr ""
+
+#: apps/questions/admin.py:57 apps/questions/admin.py:84
+msgid "Basic Information"
+msgstr ""
+
+#: apps/questions/admin.py:87
+msgid "Answers"
+msgstr ""
+
+#: apps/questions/admin.py:94 apps/users/models.py:89
+msgid "Status"
+msgstr ""
+
+#: apps/questions/models.py:9
+msgid "name"
+msgstr ""
+
+#: apps/questions/models.py:10
+msgid "start time"
+msgstr ""
+
+#: apps/questions/models.py:11
+msgid "end time"
+msgstr ""
+
+#: apps/questions/models.py:12
+msgid "count"
+msgstr ""
+
+#: apps/questions/models.py:13
+msgid "testing time"
+msgstr ""
+
+#: apps/questions/models.py:16 apps/user_answers/models.py:12
+#: apps/user_answers/models.py:34
+msgid "tour"
+msgstr ""
+
+#: apps/questions/models.py:17
+msgid "tours"
+msgstr ""
+
+#: apps/questions/models.py:25
+msgid "Text"
+msgstr ""
+
+#: apps/questions/models.py:26
+msgid "photo"
+msgstr ""
+
+#: apps/questions/models.py:27
+msgid "correct answer"
+msgstr ""
+
+#: apps/questions/models.py:28
+msgid "incorrect answer 1"
+msgstr ""
+
+#: apps/questions/models.py:29
+msgid "incorrect answer 2"
+msgstr ""
+
+#: apps/questions/models.py:30
+msgid "incorrect answer 3"
+msgstr ""
+
+#: apps/questions/models.py:31 apps/user_answers/models.py:16
+#: apps/users/models.py:124
+msgid "active"
+msgstr ""
+
+#: apps/questions/models.py:56 apps/user_answers/models.py:35
+msgid "question"
+msgstr ""
+
+#: apps/questions/models.py:57
+msgid "questions"
+msgstr ""
+
+#: apps/user_answers/admin.py:33
+msgid "Spent Time"
+msgstr ""
+
+#: apps/user_answers/models.py:11 apps/user_answers/models.py:32
+msgid "telegram user"
+msgstr ""
+
+#: apps/user_answers/models.py:13
+msgid "started at"
+msgstr ""
+
+#: apps/user_answers/models.py:14
+msgid "finished at"
+msgstr ""
+
+#: apps/user_answers/models.py:15
+msgid "spent time"
+msgstr ""
+
+#: apps/user_answers/models.py:17
+msgid "correct answers"
+msgstr ""
+
+#: apps/user_answers/models.py:20 apps/user_answers/models.py:33
+msgid "testing"
+msgstr ""
+
+#: apps/user_answers/models.py:21
+msgid "testings"
+msgstr ""
+
+#: apps/user_answers/models.py:26
+msgid "correct_answer"
+msgstr ""
+
+#: apps/user_answers/models.py:26
+msgid "Correct Answer"
+msgstr ""
+
+#: apps/user_answers/models.py:27
+msgid "incorrect_answer_1"
+msgstr ""
+
+#: apps/user_answers/models.py:27
+msgid "incorrect Answer 1"
+msgstr ""
+
+#: apps/user_answers/models.py:28
+msgid "incorrect_answer_2"
+msgstr ""
+
+#: apps/user_answers/models.py:28
+msgid "incorrect Answer 2"
+msgstr ""
+
+#: apps/user_answers/models.py:29
+msgid "incorrect_answer_3"
+msgstr ""
+
+#: apps/user_answers/models.py:29
+msgid "incorrect Answer 3"
+msgstr ""
+
+#: apps/user_answers/models.py:36
+msgid "received answer"
+msgstr ""
+
+#: apps/user_answers/models.py:37
+msgid "created at"
+msgstr ""
+
+#: apps/user_answers/models.py:38
+msgid "updated at"
+msgstr ""
+
+#: apps/user_answers/models.py:41
+msgid "answer"
+msgstr ""
+
+#: apps/user_answers/models.py:42
+msgid "answers"
+msgstr ""
+
+#: apps/users/admin.py:16
+msgid "Personal info"
+msgstr ""
+
+#: apps/users/admin.py:20
+msgid "Other info"
+msgstr ""
+
+#: apps/users/admin.py:24
+msgid "Permissions"
+msgstr ""
+
+#: apps/users/admin.py:29
+msgid "Dates"
+msgstr ""
+
+#: apps/users/admin.py:54
+msgid "Telegram Info"
+msgstr ""
+
+#: apps/users/admin.py:55
+msgid "Personal Info"
+msgstr ""
+
+#: apps/users/admin.py:56
+msgid "Others"
+msgstr ""
+
+#: apps/users/choices.py:4
+msgid "Active"
+msgstr ""
+
+#: apps/users/choices.py:5
+msgid "Blocked"
+msgstr ""
+
+#: apps/users/choices.py:6
+msgid "Not found"
+msgstr ""
+
+#: apps/users/choices.py:7
+msgid "Deactivated"
+msgstr ""
+
+#: apps/users/choices.py:11
+msgid "Private"
+msgstr ""
+
+#: apps/users/choices.py:12
+msgid "Group"
+msgstr ""
+
+#: apps/users/choices.py:13
+msgid "Super group"
+msgstr ""
+
+#: apps/users/choices.py:14
+msgid "Channel"
+msgstr ""
+
+#: apps/users/forms.py:26
+msgid "The username is already taken."
+msgstr ""
+
+#: apps/users/models.py:23
+msgid "Male"
+msgstr ""
+
+#: apps/users/models.py:24
+msgid "Female"
+msgstr ""
+
+#: apps/users/models.py:27 apps/users/models.py:79
+msgid "First name"
+msgstr ""
+
+#: apps/users/models.py:28 apps/users/models.py:80
+msgid "Last name"
+msgstr ""
+
+#: apps/users/models.py:29
+msgid "Middle name"
+msgstr ""
+
+#: apps/users/models.py:30
+msgid "Email"
+msgstr ""
+
+#: apps/users/models.py:31
+msgid "Bio"
+msgstr ""
+
+#: apps/users/models.py:32
+msgid "Date of birth"
+msgstr ""
+
+#: apps/users/models.py:33
+msgid "Gender"
+msgstr ""
+
+#: apps/users/models.py:35 apps/users/models.py:122
+msgid "username"
+msgstr ""
+
+#: apps/users/models.py:42
+msgid "Имя пользователя уже занято."
+msgstr ""
+
+#: apps/users/models.py:51
+msgid "User"
+msgstr ""
+
+#: apps/users/models.py:52
+msgid "Users"
+msgstr ""
+
+#: apps/users/models.py:81
+msgid "Username"
+msgstr ""
+
+#: apps/users/models.py:82
+msgid "Chat id"
+msgstr ""
+
+#: apps/users/models.py:83
+msgid "Language code"
+msgstr ""
+
+#: apps/users/models.py:84
+msgid "Type"
+msgstr ""
+
+#: apps/users/models.py:86
+msgid "Phone number"
+msgstr ""
+
+#: apps/users/models.py:88
+msgid "Admin"
+msgstr ""
+
+#: apps/users/models.py:91
+msgid "White list"
+msgstr ""
+
+#: apps/users/models.py:92 apps/users/models.py:110
+msgid "Age"
+msgstr ""
+
+#: apps/users/models.py:94 apps/users/models.py:114
+msgid "Job/Study place and Position"
+msgstr ""
+
+#: apps/users/models.py:99
+msgid "TelegramUser"
+msgstr ""
+
+#: apps/users/models.py:100
+msgid "TelegramUsers"
+msgstr ""
+
+#: apps/users/models.py:128
+msgid "channel"
+msgstr ""
+
+#: apps/users/models.py:129
+msgid "channels"
+msgstr ""
+
+#: apps/users/models.py:137
+msgid "Title"
+msgstr ""
+
+#: apps/users/models.py:138
+msgid "Slug"
+msgstr ""
+
+#: apps/users/models.py:139
+msgid "Content"
+msgstr ""
+
+#: apps/users/models.py:142
+msgid "info"
+msgstr ""
+
+#: apps/users/models.py:143
+msgid "infos  "
+msgstr ""
+
+#: apps/users/validators.py:7
+msgid "Enter a valid phone number."
+msgstr ""
+
+#: config/settings.py:127
+msgid "Uzbek"
+msgstr ""
+
+#: config/settings.py:191
+msgid "Welcome to the Mahalla Tanlov Bot"
+msgstr ""
+
+#: config/settings.py:209
+msgid "Go back to website"
+msgstr ""

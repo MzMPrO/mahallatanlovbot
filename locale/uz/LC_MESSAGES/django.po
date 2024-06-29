@@ -1,0 +1,427 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-27 17:24+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+#: apps/core/models.py:10
+msgid "Created at"
+msgstr "Yaratilgan vaqti"
+
+#: apps/core/models.py:11
+msgid "Updated at"
+msgstr "Yangilangan vaqti"
+
+#: apps/location/models.py:7 apps/location/models.py:19
+#: apps/location/models.py:34 apps/users/models.py:85
+msgid "Name"
+msgstr "Ism"
+
+#: apps/location/models.py:8 apps/location/models.py:21
+#: apps/location/models.py:36
+msgid "Is activate"
+msgstr "Faolmi"
+
+#: apps/location/models.py:11
+msgid "Region"
+msgstr "Viloyat"
+
+#: apps/location/models.py:12
+msgid "Regions"
+msgstr "Viloyatlar"
+
+#: apps/location/models.py:26
+msgid "Area"
+msgstr "Tuman"
+
+#: apps/location/models.py:27
+msgid "Areas"
+msgstr "Tumanlar"
+
+#: apps/location/models.py:41
+msgid "Village"
+msgstr "Mahalla"
+
+#: apps/location/models.py:42
+msgid "Villages"
+msgstr "Mahallalar"
+
+#: apps/questions/admin.py:57 apps/questions/admin.py:84
+msgid "Basic Information"
+msgstr "Asosiy Ma'lumotlar"
+
+#: apps/questions/admin.py:87
+msgid "Answers"
+msgstr "Javoblar"
+
+#: apps/questions/admin.py:94 apps/users/models.py:89
+msgid "Status"
+msgstr "Holat"
+
+#: apps/questions/models.py:9
+msgid "name"
+msgstr "Nomi"
+
+#: apps/questions/models.py:10
+msgid "start time"
+msgstr "Boshlanish vaqti"
+
+#: apps/questions/models.py:11
+msgid "end time"
+msgstr "tugash vaqti"
+
+#: apps/questions/models.py:12
+msgid "count"
+msgstr "Savollar soni"
+
+#: apps/questions/models.py:13
+msgid "testing time"
+msgstr "Davomiyligi"
+
+#: apps/questions/models.py:16 apps/user_answers/models.py:12
+#: apps/user_answers/models.py:34
+msgid "tour"
+msgstr "turing"
+
+#: apps/questions/models.py:17
+msgid "tours"
+msgstr "turlar"
+
+#: apps/questions/models.py:25
+msgid "Text"
+msgstr "Matn"
+
+#: apps/questions/models.py:26
+msgid "photo"
+msgstr "rasm"
+
+#: apps/questions/models.py:27
+msgid "correct answer"
+msgstr "to'g'ri javob"
+
+#: apps/questions/models.py:28
+msgid "incorrect answer 1"
+msgstr "noto'g'ri javob 1"
+
+#: apps/questions/models.py:29
+msgid "incorrect answer 2"
+msgstr "noto'g'ri javob 2"
+
+#: apps/questions/models.py:30
+msgid "incorrect answer 3"
+msgstr "noto'g'ri javob 3"
+
+#: apps/questions/models.py:31 apps/user_answers/models.py:16
+#: apps/users/models.py:124
+msgid "active"
+msgstr "faol"
+
+#: apps/questions/models.py:56 apps/user_answers/models.py:35
+msgid "question"
+msgstr "savol"
+
+#: apps/questions/models.py:57
+msgid "questions"
+msgstr "savollar"
+
+#: apps/user_answers/admin.py:33
+msgid "Spent Time"
+msgstr "Sarflangan vaqt"
+
+#: apps/user_answers/models.py:11 apps/user_answers/models.py:32
+msgid "telegram user"
+msgstr "Telegram foydalanuvchisi"
+
+#: apps/user_answers/models.py:13
+msgid "started at"
+msgstr "boshlangan vaqti"
+
+#: apps/user_answers/models.py:14
+msgid "finished at"
+msgstr "tugallangan vaqti"
+
+#: apps/user_answers/models.py:15
+msgid "spent time"
+msgstr "sarflangan vaqt"
+
+#: apps/user_answers/models.py:17
+msgid "correct answers"
+msgstr "to'g'ri javoblar"
+
+#: apps/user_answers/models.py:20 apps/user_answers/models.py:33
+msgid "testing"
+msgstr "sinov"
+
+#: apps/user_answers/models.py:21
+msgid "testings"
+msgstr "sinovlar"
+
+#: apps/user_answers/models.py:26
+msgid "correct_answer"
+msgstr "to'g'ri javob"
+
+#: apps/user_answers/models.py:26
+msgid "Correct Answer"
+msgstr "To'g'ri Javob"
+
+#: apps/user_answers/models.py:27
+msgid "incorrect_answer_1"
+msgstr "noto'g'ri javob 1"
+
+#: apps/user_answers/models.py:27
+msgid "incorrect Answer 1"
+msgstr "Noto'g'ri Javob 1"
+
+#: apps/user_answers/models.py:28
+msgid "incorrect_answer_2"
+msgstr "noto'g'ri javob 2"
+
+#: apps/user_answers/models.py:28
+msgid "incorrect Answer 2"
+msgstr "Noto'g'ri Javob 2"
+
+#: apps/user_answers/models.py:29
+msgid "incorrect_answer_3"
+msgstr "noto'g'ri javob 3"
+
+#: apps/user_answers/models.py:29
+msgid "incorrect Answer 3"
+msgstr "Noto'g'ri Javob 3"
+
+#: apps/user_answers/models.py:36
+msgid "received answer"
+msgstr "olindi javob"
+
+#: apps/user_answers/models.py:37
+msgid "created at"
+msgstr "yaratilgan vaqti"
+
+#: apps/user_answers/models.py:38
+msgid "updated at"
+msgstr "yangilangan vaqti"
+
+#: apps/user_answers/models.py:41
+msgid "answer"
+msgstr "javob"
+
+#: apps/user_answers/models.py:42
+msgid "answers"
+msgstr "javoblar"
+
+#: apps/users/admin.py:16
+msgid "Personal info"
+msgstr "Shaxsiy ma'lumotlar"
+
+#: apps/users/admin.py:20
+msgid "Other info"
+msgstr "Boshqa ma'lumotlar"
+
+#: apps/users/admin.py:24
+msgid "Permissions"
+msgstr "Ruxsatlar"
+
+#: apps/users/admin.py:29
+msgid "Dates"
+msgstr "Sana"
+
+#: apps/users/admin.py:54
+msgid "Telegram Info"
+msgstr "Telegram Ma'lumotlar"
+
+#: apps/users/admin.py:55
+msgid "Personal Info"
+msgstr "Shaxsiy Ma'lumot"
+
+#: apps/users/admin.py:56
+msgid "Others"
+msgstr "Boshqa"
+
+#: apps/users/choices.py:4
+msgid "Active"
+msgstr "Faol"
+
+#: apps/users/choices.py:5
+msgid "Blocked"
+msgstr "Bloklangan"
+
+#: apps/users/choices.py:6
+msgid "Not found"
+msgstr "Topilmadi"
+
+#: apps/users/choices.py:7
+msgid "Deactivated"
+msgstr "Deaktivatsiyalangan"
+
+#: apps/users/choices.py:11
+msgid "Private"
+msgstr "Shaxsiy"
+
+#: apps/users/choices.py:12
+msgid "Group"
+msgstr "Guruh"
+
+#: apps/users/choices.py:13
+msgid "Super group"
+msgstr "Yuqori guruh"
+
+#: apps/users/choices.py:14
+msgid "Channel"
+msgstr "Kanal"
+
+#: apps/users/forms.py:26
+msgid "The username is already taken."
+msgstr "Username allaqachon olingan."
+
+#: apps/users/models.py:23
+msgid "Male"
+msgstr "Erkak"
+
+#: apps/users/models.py:24
+msgid "Female"
+msgstr "Ayol"
+
+#: apps/users/models.py:27 apps/users/models.py:79
+msgid "First name"
+msgstr "Ism"
+
+#: apps/users/models.py:28 apps/users/models.py:80
+msgid "Last name"
+msgstr "Familiya"
+
+#: apps/users/models.py:29
+msgid "Middle name"
+msgstr "Otasining ismi"
+
+#: apps/users/models.py:30
+msgid "Email"
+msgstr "Elektron pochta"
+
+#: apps/users/models.py:31
+msgid "Bio"
+msgstr "Biografiya"
+
+#: apps/users/models.py:32
+msgid "Date of birth"
+msgstr "Tug'ilgan kun"
+
+#: apps/users/models.py:33
+msgid "Gender"
+msgstr "Jins"
+
+#: apps/users/models.py:35 apps/users/models.py:122
+msgid "username"
+msgstr "Username"
+
+#: apps/users/models.py:42
+msgid "Имя пользователя уже занято."
+msgstr "Foydalanuvchi nomi allaqachon olingan."
+
+#: apps/users/models.py:51
+msgid "User"
+msgstr "Foydalanuvchi"
+
+#: apps/users/models.py:52
+msgid "Users"
+msgstr "Foydalanuvchilar"
+
+#: apps/users/models.py:81
+msgid "Username"
+msgstr "Username"
+
+#: apps/users/models.py:82
+msgid "Chat id"
+msgstr "Chat identifikatori"
+
+#: apps/users/models.py:83
+msgid "Language code"
+msgstr "Til kodi"
+
+#: apps/users/models.py:84
+msgid "Type"
+msgstr "Turi"
+
+#: apps/users/models.py:86
+msgid "Phone number"
+msgstr "Telefon raqami"
+
+#: apps/users/models.py:88
+msgid "Admin"
+msgstr "Admin"
+
+#: apps/users/models.py:91
+msgid "White list"
+msgstr "Oq ro'yxat"
+
+#: apps/users/models.py:92 apps/users/models.py:110
+msgid "Age"
+msgstr "Yil"
+
+#: apps/users/models.py:94 apps/users/models.py:114
+msgid "Job/Study place and Position"
+msgstr "Ish/o'qish joyi va lavozimi"
+
+#: apps/users/models.py:99
+msgid "TelegramUser"
+msgstr "Telegram foydalanuvchisi"
+
+#: apps/users/models.py:100
+msgid "TelegramUsers"
+msgstr "Telegram foydalanuvchilari"
+
+#: apps/users/models.py:128
+msgid "channel"
+msgstr "kanal"
+
+#: apps/users/models.py:129
+msgid "channels"
+msgstr "kanallar"
+
+#: apps/users/models.py:137
+msgid "Title"
+msgstr "Sarlavha"
+
+#: apps/users/models.py:138
+msgid "Slug"
+msgstr "Slug"
+
+#: apps/users/models.py:139
+msgid "Content"
+msgstr "Kontent"
+
+#: apps/users/models.py:142
+msgid "info"
+msgstr "ma'lumot"
+
+#: apps/users/models.py:143
+msgid "infos  "
+msgstr "ma'lumotlar"
+
+#: apps/users/validators.py:7
+msgid "Enter a valid phone number."
+msgstr "To'g'ri telefon raqamini kiriting."
+
+#: config/settings.py:127
+msgid "Uzbek"
+msgstr "O'zbek"
+
+#: config/settings.py:191
+msgid "Welcome to the Mahalla Tanlov Bot"
+msgstr "Mahalla Tanlov Botiga xush kelibsiz"
+
+#: config/settings.py:209
+msgid "Go back to website"
+msgstr "Veb-saytga qaytish"
+
