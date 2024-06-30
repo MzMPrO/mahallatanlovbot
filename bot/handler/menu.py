@@ -49,12 +49,13 @@ async def testing_handler(message: types.Message, state: FSMContext):
             user = await db.get_user(chat_id=chat_id)
             tour = await db.get_tour()
             if tour is None:
-                await message.answer("<b>Test savollari tez kunda e'lon qilinadi. \n\nBizni kuzatishni davom eting!</b>")
+                await message.answer(
+                    "<b>Test savollari tez kunda e'lon qilinadi. \n\nBizni kuzatishni davom eting!</b>")
             else:
                 if await db.get_test(user.id, tour.id):
                     testing = await db.get_testing(user.id, tour.id)
                     await message.answer(
-                        f"<b>Test yakunlandi!\nTo'g'ri javoblar soni: {testing.correct_answers_count} ta</b>")
+                        f"<b>Test yakunlandi!\nTo'g'ri javoblar soni: {testing.correct_answers_count} ta\nSarflangan vaqt: {testing.spent_time}\n\nKeyingi tanlovlarni e'lon qilib boramiz. Biz bilan qoling!</b>")
                 else:
                     try:
                         ikm_tour = InlineKeyboardMarkup(row_width=1)
@@ -68,13 +69,18 @@ async def testing_handler(message: types.Message, state: FSMContext):
                     except Exception as e:
                         log.error(f"line 77: menu.py Target [ID:{message.chat.id}]: {e}")
         else:
-            try:
-                await message.bot.send_message(chat_id=message.chat.id,
-                                               text="<b>Test yakunlandi!\nTo'g'ri javoblar soni: 7 ta</b>",
-                                               reply_to_message_id=data['message_id'])
-            except exceptions.MessageToReplyNotFound as e:
-                await message.bot.send_message(chat_id=message.chat.id,
-                                               text="<b>Test yakunlandi!\nTo'g'ri javoblar soni: 7 ta</b>")
+            chat_id = message.chat.id
+            user = await db.get_user(chat_id=chat_id)
+            tour = await db.get_tour()
+            if await db.get_test(user.id, tour.id):
+                testing = await db.get_testing(user.id, tour.id)
+                try:
+                    await message.bot.send_message(chat_id=message.chat.id,
+                                                   text=f"<b>Test yakunlandi!\nTo'g'ri javoblar soni: {testing.correct_answers_count} ta\nSarflangan vaqt: {testing.spent_time}\n\nKeyingi tanlovlarni e'lon qilib boramiz. Biz bilan qoling!</b>",
+                                                   reply_to_message_id=data['message_id'])
+                except exceptions.MessageToReplyNotFound as e:
+                    await message.bot.send_message(chat_id=message.chat.id,
+                                                   text=f"<b>Test yakunlandi!\nTo'g'ri javoblar soni: {testing.correct_answers_count} ta\nSarflangan vaqt: {testing.spent_time}\n\nKeyingi tanlovlarni e'lon qilib boramiz. Biz bilan qoling!</b>")
     except ObjectDoesNotExist:
         await start_command(message)
     except Exception as e:
@@ -192,10 +198,10 @@ async def process_answer(callback_query: types.CallbackQuery, state: FSMContext)
                 await db.create_answers_bulk(tg_user_id=user.id, tour_id=tour.id, testing_id=testing.id,
                                              answers=data['questions'], user_answer=data['user_answers'])
                 await callback_query.message.edit_text(
-                    f"Test yakunlandi!\n"
-                    f"{tour.name}\n"
-                    f"<b>To'g'ri javoblar soni:</b> {correct_answers_count} ta\n\n"
-                    f"Keyingi turlarni e'lon qilib boramiz. Biz bilan qoling!"
+                    f"<b>Test yakunlandi!\n"
+                    f"To'g'ri javoblar soni: {correct_answers_count} ta\n"
+                    f"Sarflangan vaqt: {speling_time}\n\n"
+                    f"Keyingi turlarni e'lon qilib boramiz. Biz bilan qoling!</b>"
                 )
             else:
                 await send_question(data['questions'][data['question_id'] + 1]["text"],
