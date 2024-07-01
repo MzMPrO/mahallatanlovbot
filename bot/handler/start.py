@@ -52,10 +52,10 @@ async def start_command(message: types.Message):
                 type=message.chat.type,
             )
         else:
-            try:
-                info_text = await db.get_info_by_slug("start-text")
-            except ObjectDoesNotExist as e:
-                info_text = f""" <b>"Mahalladagi kitobxon" tanlovida ishtirok etish uchun avval ro'yxatdan o'ting</b> """
+            # try:
+            #     info_text = await db.get_info_by_slug("start-text")
+            # except ObjectDoesNotExist as e:
+            info_text = f""" <b>"Mahalladagi kitobxon" tanlovida ishtirok etish uchun avval ro'yxatdan o'ting</b> """
             if not info_text:
                 info_text = f"""
                 <b>"Mahalladagi kitobxon" tanlovida ishtirok etish uchun avval ro'yxatdan o'ting</b>"""
