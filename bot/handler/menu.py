@@ -146,7 +146,8 @@ async def question_answer_handler(message: types.Message, state: FSMContext):
                                 user_answers={}, message_id=message.message_id)
         await state.set_state(None)
     except Exception as e:
-        log.error(f"line 164: menu.py Target [ID:]: {str(e).lower()}")
+        # log.error(f"line 164: menu.py Target [ID:]: {str(e).lower()}")
+        pass
 
 
 async def send_question(question_text, message: types.Message):
@@ -285,7 +286,6 @@ Bizni kuzatishni davom eting!</b>""")
 
 async def info_handler(message: types.Message):
     try:
-        print(message)
         infos = await db.get_info_by_slug("info-text")
         info_text = strip_tags(infos.content)
     except ObjectDoesNotExist as e:

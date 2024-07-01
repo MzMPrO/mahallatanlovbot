@@ -6,6 +6,7 @@ from aiogram.types import ContentType
 from bot.button.text import *
 from bot.dispacher import dp
 from bot.handler import *
+from bot.handler.exceptions import errors_handler
 from bot.handler.menu import *
 from bot.handler.post import *
 from bot.middlewares.check_user import PremiumMiddleware, process_subscription_check
@@ -45,6 +46,8 @@ dp.register_callback_query_handler(process_subscription_check, lambda c: c.data 
 
 dp.register_message_handler(get_command, is_admin=True, commands=['get'])
 dp.register_message_handler(get_all_command, is_admin=True, commands=['get_all', "getall"])
+
+dp.register_error_handler(errors_handler)
 dp.register_message_handler(any_message_handler, content_types=ContentType.ANY)
 
 # Middlewares
