@@ -286,8 +286,9 @@ Bizni kuzatishni davom eting!</b>""")
 
 async def info_handler(message: types.Message):
     try:
-        infos = await db.get_info_by_slug("info-text")
-        info_text = strip_tags(infos.content)
+        # infos = await db.get_info_by_slug("info-text")
+        # info_text = strip_tags(infos.content)
+        info_text = "Tanlov haqida ma'lumotlar O‘zbekiston mahallalari uyushmasi rasmiy kanali https://t.me/uzmahallalari da berib boriladi"
     except ObjectDoesNotExist as e:
         info_text = "To'liq ma'lumot bilan shu yerda tanishishingiz mumkin..."
     try:
